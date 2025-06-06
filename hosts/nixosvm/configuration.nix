@@ -11,7 +11,7 @@
     ];
 
   # Enable home-manager for your user
-  home-manager.users.hoang = import ../../home-manager/home.nix;
+  # home-manager.users.hoang = import ../../home-manager/home.nix;
 
   # Bootloader.
   boot.loader.grub.enable = true;
