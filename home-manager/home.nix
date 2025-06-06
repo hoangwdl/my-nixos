@@ -1,14 +1,12 @@
-{ pkgs, ... }:
-
-{
-  home.username = "hoang";
-  home.homeDirectory = "/home/hoang";
-  home.stateVersion = "25.05";
-
-  programs.home-manager.enable = true;
-
-  home.packages = [
-    pkgs.htop
+{ homeStateVersion, user, ... }: {
+  imports = [
+    ./modules
+    ./home-packages.nix
   ];
-}
 
+  home = {
+    username = user;
+    homeDirectory = "/home/${user}";
+    stateVersion = homeStateVersion;
+  };
+}
