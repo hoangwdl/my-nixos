@@ -2,7 +2,7 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-    vscode
+    # vscode # not work here
 
     htop
   ];
