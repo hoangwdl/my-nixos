@@ -4,5 +4,6 @@
     ./boot.nix
     ./net.nix
     ./timezone.nix
+    ./nix.nix
   ];
 }
