@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, home-manager, ... }:
+{ config, pkgs, stateVersion, hostname, ... }:
 
 {
   imports =
@@ -26,19 +26,6 @@
     variant = "";
   };
 
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.hoang = {
-    isNormalUser = true;
-    description = "Hoang Nguyen";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
-  };
-
   # Install firefox.
   programs.firefox.enable = true;
 
@@ -49,7 +36,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     git
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vim
     wget
     vscode
     spice-vdagent
@@ -59,5 +46,5 @@
   services.openssh.enable = true;
   services.spice-vdagentd.enable = true;
 
-  system.stateVersion = "25.05"; # Did you read the comment?
+  system.stateVersion = stateVersion;
 }
