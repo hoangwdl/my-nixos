@@ -14,7 +14,7 @@
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = system;
         modules = [
-          ./configuration.nix
+          ./hosts/nixosvm/configuration.nix
           home-manager.nixosModules.home-manager
         ];
         specialArgs = {
