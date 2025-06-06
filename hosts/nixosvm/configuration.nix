@@ -8,16 +8,9 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../nixos/modules
     ];
-
-  # Enable home-manager for your user
-  # home-manager.users.hoang = import ../../home-manager/home.nix;
-
-  # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
-  boot.loader.grub.useOSProber = true;
-
+    
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
