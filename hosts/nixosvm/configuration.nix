@@ -11,33 +11,7 @@
       ../../nixos/modules
     ];
 
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Enable networking
-  networking.networkmanager.enable = true;
-
-  # Set your time zone.
-  time.timeZone = "Asia/Ho_Chi_Minh";
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "vi_VN";
-    LC_IDENTIFICATION = "vi_VN";
-    LC_MEASUREMENT = "vi_VN";
-    LC_MONETARY = "vi_VN";
-    LC_NAME = "vi_VN";
-    LC_NUMERIC = "vi_VN";
-    LC_PAPER = "vi_VN";
-    LC_TELEPHONE = "vi_VN";
-    LC_TIME = "vi_VN";
-  };
+  networking.hostName = "nixosvm"; # Define your hostname.
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
