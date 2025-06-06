@@ -5,5 +5,6 @@
     ./net.nix
     ./timezone.nix
     ./nix.nix
+    ./audio.nix
   ];
 }
