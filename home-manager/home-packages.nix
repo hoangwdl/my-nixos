@@ -3,6 +3,18 @@
 
   home.packages = with pkgs; [
     vscode
-    htop
+
+    # cli tools
+    btop
+    cliphist
+    wl-clipboard
+    fzf
+    zip
+    unzip
+
+    # coding
+    php
+    nodejs
+    python3
   ];
 }
