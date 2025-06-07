@@ -33,7 +33,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     git
-    vscode
+    # vscode
     vim
     wget
     spice-vdagent
