@@ -15,6 +15,8 @@
         # Exit Hyprland - no default for this  
         "$mod SHIFT, E, exit"
       ];
+
+      monitor = "Virtual-1,1920x1080@60.000,0x0,1";      
     };
   };
 }

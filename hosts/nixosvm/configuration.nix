@@ -47,4 +47,18 @@
   services.spice-vdagentd.enable = true;
 
   system.stateVersion = stateVersion;
+
+  # For QEMU VMs - ensure proper graphics support
+  hardware.graphics.enable = true;
+  
+  # If you're using virtio-gpu
+  # services.xserver.videoDrivers = [ "virtio" ];
+  
+  # Or if you're using different graphics in QEMU
+  services.xserver.videoDrivers = [ "qxl" ];
+  
+  # Enable Wayland support
+  environment.sessionVariables = {
+    WLR_NO_HARDWARE_CURSORS = "1";  # Often needed in VMs
+  };
 }
