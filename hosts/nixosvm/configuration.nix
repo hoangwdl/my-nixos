@@ -37,6 +37,7 @@
     vim
     wget
     spice-vdagent
+    home-manager
   ];
 
   nixpkgs.config.allowUnfree = true;
