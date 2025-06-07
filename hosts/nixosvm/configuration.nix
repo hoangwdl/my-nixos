@@ -43,7 +43,15 @@
   nixpkgs.config.allowUnfree = true;
 
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+    ports = [ 22 ];
+    settings = {
+      PasswordAuthentication = true;
+      AllowUsers = null;
+      PermitRootLogin = "yes";
+    };
+  };
   services.spice-vdagentd.enable = true;
 
   system.stateVersion = stateVersion;
