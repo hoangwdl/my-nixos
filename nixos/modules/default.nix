@@ -7,5 +7,6 @@
     ./nix.nix
     ./audio.nix
     ./user.nix
+    ./hyprland.nix
   ];
 }
