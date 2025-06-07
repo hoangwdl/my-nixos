@@ -29,7 +29,7 @@
   home.packages = with pkgs; [
     kitty        # Terminal
     #wofi         # Application launcher
-    waybar       # Status bar
+    # waybar       # Status bar
     #hyprpaper    # Wallpaper
     #grim         # Screenshot tool
     #slurp        # Screen area selection
