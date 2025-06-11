@@ -2,7 +2,7 @@
   imports = [
     ./git.nix
     ./bat.nix
-    ./hyprland.nix
+    ./hyprland
     ./waybar
     ./stylix.nix
   ];
