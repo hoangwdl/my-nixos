@@ -2,6 +2,10 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
+    #Apps
+    obsidian
+
+    #Code Editor
     vscode
 
     # cli tools
@@ -9,10 +13,12 @@
     cliphist
     wl-clipboard
     fzf
+    zoxide
+    jq
     zip
     unzip
 
-    # coding
+    # code languages
     php
     nodejs
     python3
