@@ -13,7 +13,7 @@
       # Only bind what Hyprland doesn't have defaults for
       bind = [
         # Launch terminal - no default for this
-        "$mod, Return, exec, xfce4-terminal"
+        "$mod, Return, exec, kitty"
         
         "$mod, C, killactive"
 
