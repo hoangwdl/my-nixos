@@ -18,6 +18,10 @@
     zip
     unzip
 
+    awscli2
+    aws-sam-cli
+    # aws-shell
+
     # code languages
     go
     php
