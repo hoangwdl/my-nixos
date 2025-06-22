@@ -24,6 +24,7 @@
 
     docker
     podman
+    podman-compose
 
     # code languages
     go
