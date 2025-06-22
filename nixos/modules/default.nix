@@ -9,5 +9,6 @@
     ./audio.nix
     ./user.nix
     ./hyprland.nix
+    ./docker.nix
   ];
 }

@@ -22,6 +22,8 @@
     aws-sam-cli
     # aws-shell
 
+    docker
+
     # code languages
     go
     php
