@@ -8,6 +8,10 @@
     #Code Editor
     vscode
 
+    postman
+    bruno
+    bruno-cli
+
     # cli tools
     btop
     cliphist
