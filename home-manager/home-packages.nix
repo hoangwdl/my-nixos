@@ -11,6 +11,7 @@
     postman
     bruno
     bruno-cli
+    dbeaver-bin
 
     # cli tools
     btop
