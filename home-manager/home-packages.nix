@@ -19,6 +19,7 @@
     unzip
 
     # code languages
+    go
     php
     nodejs
     python3

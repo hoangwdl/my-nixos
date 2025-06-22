@@ -5,5 +5,7 @@
     ./hyprland
     ./waybar
     ./stylix.nix
+    ./zsh.nix
+    ./tmux.nix
   ];
 }

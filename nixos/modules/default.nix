@@ -3,6 +3,7 @@
     ./kernal.nix
     ./boot.nix
     ./net.nix
+    ./nh.nix
     ./timezone.nix
     ./nix.nix
     ./audio.nix
