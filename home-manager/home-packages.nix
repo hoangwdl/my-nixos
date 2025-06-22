@@ -23,6 +23,7 @@
     # aws-shell
 
     docker
+    podman
 
     # code languages
     go
