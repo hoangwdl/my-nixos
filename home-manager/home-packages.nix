@@ -35,6 +35,8 @@
     go
     php
     nodejs
+    yarn
+    pnpm
     python3
   ];
 }
