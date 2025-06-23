@@ -38,5 +38,6 @@
     yarn
     pnpm
     python3
+    uv
   ];
 }
