@@ -36,6 +36,8 @@
       if [ -z "$TMUX" ] && [ -n "$DISPLAY" ]; then
         tmux attach-session -t default || tmux new-session -s default
       fi
+
+      eval "$(zoxide init zsh)"
     '';
   };
 }

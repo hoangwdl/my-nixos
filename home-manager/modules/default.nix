@@ -8,5 +8,6 @@
     ./stylix.nix
     ./zsh.nix
     ./tmux.nix
+    ./zoxide.nix
   ];
 }
