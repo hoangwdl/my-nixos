@@ -2,8 +2,13 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
+
+    #browsers
+    google-chrome
+
     #Apps
     obsidian
+    slack
 
     #Code Editor
     vscode
