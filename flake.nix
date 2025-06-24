@@ -19,6 +19,7 @@
     homeStateVersion = "25.05";
     user = "hoang";
     hosts = [
+      { hostname = "nixos"; stateVersion = "25.05"; }
       { hostname = "nixosvm"; stateVersion = "25.05"; }
     ];
 
