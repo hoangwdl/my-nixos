@@ -10,5 +10,6 @@
     ./user.nix
     ./hyprland.nix
     ./docker.nix
+    ./emulator.nix
   ];
 }

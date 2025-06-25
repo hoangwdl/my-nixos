@@ -45,5 +45,8 @@
     pnpm
     python3
     uv
+
+    qemu
+    virt-manager
   ];
 }
