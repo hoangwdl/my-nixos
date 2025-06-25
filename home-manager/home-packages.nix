@@ -5,6 +5,7 @@
 
     #browsers
     google-chrome
+    brave
 
     #Apps
     obsidian
