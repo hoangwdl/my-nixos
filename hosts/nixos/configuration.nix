@@ -15,6 +15,34 @@
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  # hardware.bluetooth.settings.General.ControllerMode = "bredr";
+
+  # Enable Bluetooth GUI management
+  services.blueman.enable = true;  # This provides the Bluetooth manager GUI
+
+  # Ensure the firmware is available
+  hardware.enableRedistributableFirmware = true;
+
+  # Add the specific firmware package for MT7922
+  hardware.firmware = with pkgs; [
+    linux-firmware
+  ];
+
+  # hardware.bluetooth.package = pkgs.bluez;
+
+  # hardware.bluetooth = {
+  #   enable = true;
+  #   powerOnBoot = true;
+  #   # package = pkgs.bluez;
+  #   settings = {
+  #     General = {
+  #       ControllerMode = "dual";
+  #     };
+  #     Policy = {
+  #       AutoEnable = "true";
+  #     };
+  #   };
+  # };
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
