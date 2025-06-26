@@ -20,6 +20,7 @@
     dbeaver-bin
 
     # cli tools
+    gnumake
     stow
     btop
     cliphist
