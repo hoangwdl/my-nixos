@@ -20,6 +20,7 @@
     dbeaver-bin
 
     # cli tools
+    stow
     btop
     cliphist
     wl-clipboard
