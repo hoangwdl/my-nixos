@@ -1,11 +1,11 @@
 { pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
 
-  # nixpkgs.config.packageOverrides = pkgs: {
-  #   tableplus = pkgs.writeShellScriptBin "tableplus" ''
-  #     exec ${pkgs.appimage-run}/bin/appimage-run ${./tableplus.AppImage} "$@"
-  #   '';
-  # };
+  nixpkgs.config.packageOverrides = pkgs: {
+    tableplus = pkgs.writeShellScriptBin "tableplus" ''
+      exec ${pkgs.appimage-run}/bin/appimage-run ${./tableplus.AppImage} "$@"
+    '';
+  };
 
   home.packages = with pkgs; [
 
@@ -26,7 +26,7 @@
     bruno
     bruno-cli
     dbeaver-bin
-    # tableplus
+    tableplus
 
     # cli tools
     gnumake
