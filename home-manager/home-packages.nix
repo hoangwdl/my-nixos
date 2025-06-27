@@ -29,6 +29,7 @@
     tableplus
 
     # cli tools
+    kitty
     gnumake
     stow
     btop

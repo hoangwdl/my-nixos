@@ -27,7 +27,7 @@
 
   # Additional Wayland applications
   home.packages = with pkgs; [
-    kitty        # Terminal
+    # kitty        # Terminal
     #wofi         # Application launcher
     # waybar       # Status bar
     #hyprpaper    # Wallpaper
