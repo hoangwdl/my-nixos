@@ -98,6 +98,29 @@
     };
   };
 
+  services.flatpak.enable = true;
+  systemd.services.flatpak-repo = {
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    '';
+  };
+  
+  # Optional: Add Flathub remote automatically
+  # This requires nixos-unstable or NixOS 23.05+
+  # services.flatpak.remotes = {
+  #   "flathub" = "https://dl.flathub.org/repo/flathub.flatpakrepo";
+  #   "flathub-beta" = "https://dl.flathub.org/beta-repo/flathub-beta.flatpakrepo";
+  # };
+  
+  # Optional: Install specific Flatpak packages declaratively
+  # services.flatpak.packages = [
+  #   "io.dbeaver.DBeaverCommunity"
+  #   # "com.spotify.Client"
+  #   # Add your desired Flatpak app IDs here
+  # ];
+
   system.stateVersion = "25.05";
 
 }

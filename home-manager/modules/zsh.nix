@@ -38,6 +38,8 @@
       fi
 
       eval "$(zoxide init zsh)"
+
+      export GDK_BACKEND=x11 dbeaver
     '';
   };
 }
